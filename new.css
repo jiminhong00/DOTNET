@@ -1,0 +1,130 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.hrBig{
+  background-color:dimgrey;
+  color:black;
+  height: 5px;
+  width: 100%;
+ }
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  width: 100%
+}
+
+ .text-left{
+  color:darkgrey;
+ }
+
+ .warning{
+    color: red;
+ }
+.list{
+  margin: auto;
+  border: 1px dimgrey;
+
+}
+
+.smallHr{
+  margin-top: 0px; 
+  margin-bottom:25px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+}
+
+.btn1 {
+  width: 85px;
+  height: 25px;
+  font-size: 13px;
+}
+
+th{
+  text-align: center;
+}
+
+.tRow{
+  width: 5%;
+}
+
+.tSub{
+  width: 20%;
+}
+
+.tTeach{
+  width: 18%;
+}
+
+.tLearn{
+  width: 50%;
+}
+
+.tBut{
+  width: 7%;
+}
+
+.badgeT{
+  width: 80px;
+  height: 35px;
+  font-size: 15px;
+}
+
+h3 {
+  padding:9px;
+  text-align:left;
+  margin-bottom: 0px;
+}
