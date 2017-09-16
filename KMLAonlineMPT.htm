@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Conpatible" content="IE=edge">
     <meta name="viewpoint" content="width=device-width, initial sclase=1">
 	<title>KMLAonlineMPT</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="new.css"> 
+    <script type="text/javscript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="./mpt.js"></script>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
 	<div class="container">
@@ -24,34 +27,48 @@
 			</h3>
 			<hr class="smallHr">
 		</div>
-		<div class="row">
-			<div class="col-md-2 text-center" style="padding:9px;">
-				과목명 *<hr>
-				<div class="col-md-2"> <input type="text"> </div>
+		<div class=row>
+			<div class="col-md-12">
+				<table class="table-responsive">
+					<thead class="text-center" style="padding: 9px;">
+						<tr>
+							<td class="tShow">과목명*</td>
+							<td class="tShow">배우미1*</td>
+							<td class="tShow">배우미2</td>
+							<td class="tShow">배우미3</td>
+							<td class="tShow">배우미4</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<form name="assign" method="post" autocomplete="off">
+								<td ><input style="margin-left: 20px;" type="text" id="subject" list="subjectList"></td>
+								<datalist id="subjectList">
+									<option value="AP Physics C"></option>
+									<option value="AP Chemistry"></option>
+								</datalist>
+								<datalist id="nameList">
+									<option value="21홍지민"></option>
+									<option value="22안주언"></option>
+									<option value="22김하진"></option>
+									<option value="20김현재"></option>
+								</datalist>
+								<td ><input style="margin-left: 20px;" type="text" id="name1" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" id="name2" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" id="name3" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" id="name4" list="nameList"></td>
+								<td style="width: 8%"><button class="btn btn-outline-primary btn1" type="button">배우미 추가</button></td>
+							</form>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="col-md-2 text-center" style="padding:9px;">
-				배우미1 *<hr>
-				<div class="col-md-2"> <input type="text"> </div>
-			</div>
-			<div class="col-md-2 text-center" style="padding:9px;">
-				배우미2<hr>
-				<div class="col-md-2"> <input type="text"> </div>
-			</div>
-			<div class="col-md-2 text-center" style="padding:9px;">
-				배우미3<hr>
-				<div class="col-md-2"> <input type="text"> </div>
-			</div>
-			<div class="col-md-2 text-center" style="padding:9px;">
-				배우미4<hr>
-				<div class="col-md-2"> <input type="text"> </div>
-			</div>
-			<div class="col-md-2" style="padding: 8px;"><br><br><input class="btn btn-outline-primary btn1" type="button" value="배우미 추가"></div>				
 		</div>
 
 		<div class="row">
 			<br><br>
 			<div class="col-md-10 warning"> <br><br>* 표시는 필수항목입니다.</div>
-			<div class="col-md-2" style="padding-left: 9px;"> <br><input class="btn btn-outline-success btn1" type="submit" value="신청하기!!" ></div>
+			<div class="col-md-2" style="padding-left: 60px;"> <br><button class="btn btn-outline-success btn1" type="submit">신청하기!!</button></div>
 		</div>
 		<div class="row">
 			<h3 style="text-align:left; margin-top: 30px;">
@@ -64,7 +81,7 @@
 				<span class="badge badge-secondary badgeT">도우미</span>
 			</div>
 			<div class="col-md-11">
-				<table class="table table-bordered table-hover">
+				<table class="table table-bordered table-hover"><form name="change" method="post">
 					<thead class="thead-inverse">
 						<tr>
 							<th class="tRow">#</th>
@@ -79,24 +96,24 @@
 			          <td>  (과목명)  </td>
 			          <td>  (도우미)  </td>
 			          <td>  (배우미)  </td>
-			          <td class="tBut"><input class="btn btn-outline-danger" type="submit" value="취소/변경"></td>
+			          <form method="post"><td class="tBut"><button class="btn btn-outline-danger" type="submit">취소/변경</button></td></form>
 			        </tr>
 			        <tr class="list"> 
 			          <th>  2  </th>
 			          <td>  (과목명)  </td>
 			          <td>  (도우미)  </td>
 			          <td>  (배우미)  </td>
-			          <td><input class="btn btn-outline-danger" type="submit" value="취소/변경"></td>
+			          <form method="post"><td><button class="btn btn-outline-danger" type="submit">취소/변경</button></td></form>
 			        </tr>
 			        <tr class="list">
 			          <th>  3  </th>
 			          <td>  (과목명)  </td>
 			          <td>  (도우미)  </td>
 			          <td>  (배우미)  </td>
-			          <td><input class="btn btn-outline-danger" type="submit" value="취소/변경"></td>
+			          <form method="post"><td><button class="btn btn-outline-danger" type="submit">취소/변경</button></td><form>
 			        </tr>
 			      </tbody>
-			    </table>
+			    </table></form>
 			</div>
 		</div>
 

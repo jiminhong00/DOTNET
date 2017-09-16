@@ -75,6 +75,7 @@ hr {
 h3,
 .h3 {
   font-size: 24px;
+  color: #4D4B4B;
 }
 
 h1 {
@@ -117,6 +118,10 @@ th{
   width: 7%;
 }
 
+.tShow{
+  width: 17%;
+}
+
 .badgeT{
   width: 80px;
   height: 35px;
@@ -128,3 +133,4 @@ h3 {
   text-align:left;
   margin-bottom: 0px;
 }
+
