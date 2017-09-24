@@ -27,6 +27,8 @@
 			</h3>
 			<hr class="smallHr">
 		</div>
+
+		<form name="assign" method="post" autocomplete="off">
 		<div class=row>
 			<div class="col-md-12">
 				<table class="table-responsive" id="application">
@@ -40,7 +42,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<form name="assign" method="post" autocomplete="off">
+						
 							<tr>
 								<td ><input style="margin-left: 20px;" type="text" id="subject" list="subjectList"></td>
 								<datalist id="subjectList">
@@ -53,13 +55,13 @@
 									<option value="22김하진"></option>
 									<option value="20김현재"></option>
 								</datalist>
-								<td ><input style="margin-left: 20px;" type="text" id="name" list="nameList"></td>
-								<td ><input style="margin-left: 20px;" type="text" id="name" list="nameList"></td>
-								<td ><input style="margin-left: 20px;" type="text" id="name" list="nameList"></td>
-								<td ><input style="margin-left: 20px;" type="text" id="name" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" name="nameL" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" name="nameL" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" name="nameL" list="nameList"></td>
+								<td ><input style="margin-left: 20px;" type="text" name="nameL" list="nameList"></td>
 								<td style="width: 8%"><button id="newLearn" class="btn btn-outline-primary btn1" type="button">배우미 추가</button></td>
 							</tr>
-						</form>
+						
 					</tbody>
 				</table>
 			</div>
@@ -68,9 +70,10 @@
 		<div class="row">
 			<br><br>
 			<div class="col-md-9 warning"> <br><br>* 표시는 필수항목입니다.</div>
-			<div class="col-md-1" style="padding-left: 60px;"> <br><button class="btn btn-outline-info btn1" type="reset">리셋</button></div>
-			<div class="col-md-2" style="padding-left: 60px;"> <br><button class="btn btn-outline-success btn1" type="submit">신청하기</button></div>
+			<div class="col-md-1" id="resetStyle"> <br><button class="btn btn-outline-info btn1" type="reset">리셋</button></div>
+			<div class="col-md-2" id="newMptStyle"> <br><button id="newMPT" class="btn btn-outline-success btn1" type="button">신청하기</button></div>
 		</div>
+		</form>
 		<div class="row">
 			<h3 style="text-align:left; margin-top: 30px;">
 				신청목록
@@ -82,39 +85,20 @@
 				<span class="badge badge-secondary badgeT">도우미</span>
 			</div>
 			<div class="col-md-11">
-				<table class="table table-bordered table-hover"><form name="change" method="post">
+				<table id="teachTable" class="table table-bordered table-hover">
 					<thead class="thead-inverse">
 						<tr>
 							<th class="tRow">#</th>
 							<th class="tSub">과목명</th>
 							<th class="tTeach">도우미</th>
 							<th class="tLearn">배우미</th>
+							<th class="tBut">변경</th>
 						</tr>
 					</thead>
 			      <tbody>
-			        <tr class="list">
-			          <th>  1  </th>
-			          <td>  (과목명)  </td>
-			          <td>  (도우미)  </td>
-			          <td>  (배우미)  </td>
-			          <form method="post"><td class="tBut"><button class="btn btn-outline-danger" type="submit">취소/변경</button></td></form>
-			        </tr>
-			        <tr class="list"> 
-			          <th>  2  </th>
-			          <td>  (과목명)  </td>
-			          <td>  (도우미)  </td>
-			          <td>  (배우미)  </td>
-			          <form method="post"><td><button class="btn btn-outline-danger" type="submit">취소/변경</button></td></form>
-			        </tr>
-			        <tr class="list">
-			          <th>  3  </th>
-			          <td>  (과목명)  </td>
-			          <td>  (도우미)  </td>
-			          <td>  (배우미)  </td>
-			          <form method="post"><td><button class="btn btn-outline-danger" type="submit">취소/변경</button></td><form>
-			        </tr>
+			        
 			      </tbody>
-			    </table></form>
+			    </table>
 			</div>
 		</div>
 
@@ -140,20 +124,6 @@
 				          	<td>  (도우미)  </td>
 				          	<td>  (배우미)  </td>
 				          	<td class="tBut"></td>
-				        </tr>
-				        <tr class="list"> 
-				         	<th>  2  </th>
-				          	<td>  (과목명)  </td>
-				          	<td>  (도우미)  </td>
-				          	<td>  (배우미)  </td>
-				          	<td></td>
-				        </tr>		
-				        <tr class="list">
-				          	<th>  2  </th>
-				          	<td>  (과목명)  </td>
-				          	<td>  (도우미)  </td>
-				          	<td>  (배우미)  </td>
-				          	<td></td>
 				        </tr>
 			      	</tbody>
 			    </table>

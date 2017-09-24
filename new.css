@@ -134,3 +134,10 @@ h3 {
   margin-bottom: 0px;
 }
 
+#newMptStyle{
+  left: 61px; padding-right: 0px; padding-left: 0px; margin-left: 0px; border-left-width: 60px;
+}
+
+#resetStyle{
+  left: 53px; padding-right: 0px; padding-left: 0px;
+}
